@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #fff;
+    background-color: black;
+}
+ul,li,ol,a,a:visited,a:active {
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family:'highspeed' ;
+    src: url(/fonts/HighSpeed.ttf) format('truetype');
+}
+/* NAVBAR ==================================================================================*/
+header {
+    background-color:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 15px 100px;
+    z-index: 1;
+}
+header.sticky{
+    padding: 5px 100px;
+    background:black;
+    opacity: 0.7;
+}
+.hh  {
+    font-size: larger;
+    text-align: center;
+    font-size: 20px;
+    width: 25%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.banner {
+  background-image: url('pics/guidelines.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.banner .card{
+  width: 900px;
+  height: 250px;
+  position:relative;
+  left: 15px;
+  top: 15px;
+  padding: 110px;
+  background-color: transparent;
+}
+
+.banner div,.banner span{
+  background-color: transparent;
+  font-family: 'Bebas Neue';
+  font-size:2em;
+  width: max-content;
+  color: #fff;
+}
+
+.banner .quote{
+  font-size: 1.1em;
+}
+
+/* NAVBAR ==================================================================================*/
+
+.banner{
+width: 100%;
+height: 900px;
+background-color: black;
+background-repeat: no-repeat;
+margin-bottom: 10px;
+}
+.banner img{
+  cursor: pointer;  
+  width: 100%;
+}
+/*====================================================================*/
+/*============================================*/
+header ul {
+    font-size: larger;
+    text-align: center;
+    font-size: 20px;
+    list-style: none;
+    width: 25%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:green;
+    position: absolute;
+    left:0;
+    bottom:-5px;
+    transition: 0.5s;
+}
+header ul li:hover::after{
+    width: 100%;
+}
+header ul li{
+    position: relative;
+}
+
+.logoname{
+  font-family: 'Bebas Neue';
+}
+header li{
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+}
+/*============================================*/
+button {
+    padding: 5px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: x-large;
+    margin-left: 10px;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: green;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+/*============================================*/
+.workout ,
+.Nutrition,
+.Features
+{
+  width: 100%;
+  padding: 100px 0px;
+  background-color: black;
+}
+.workout img ,
+.Nutrition img ,
+.Features img 
+{
+  height: auto;
+  width: 400px;
+  border-radius: 5%;
+}
+
+.text {
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text h2{
+  color:white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+}
+.text p {
+  color: whitesmoke;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*============================================*/
+.subheading:after{
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: white;
+  content: " ";
+}
+/*============================================*/
+
+
+
+.footer-distributed {
+  background-color: black;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+/**/
+.cnt{
+  padding-top:68px ;
+  font-family: 'ubuntu',sans-serif;
+  
+}
+
+.cnt {
+  margin: 20px;
+  
+}
+
+.cnt h1 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  border-bottom: 1px  solid white ;
+  text-shadow: green 1px 0 10px;
+}
+
+.exercise {
+  margin-bottom: 30px;
+  margin: 30px auto;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  
+  color: #333;
+}
+
+.exercise h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.exercise p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  
+}
+
+.exercise img {
+  display: block;
+  margin-top: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  border-radius: 10px;
+}
+
+.cnt span {
+  font-weight: bold;
+  display: block;
+}
+
+
+
+
+
+
+/**/
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+/*============================================*/
+
+@media only screen and (min-width:1628px) {
+  .banner {
+    height:1100px;
+  }
+}
+
+@media only screen and (min-width:1952px) {
+  .banner {
+    height: 1400px;
+  }
+}
+@media only screen and (max-width:1249px) {
+  .banner {
+    height:700px;
+  }
+}
+
+@media only screen and (max-width:868px) {
+  .banner {
+    height:450px;
+  }
+  .main img{
+    width: 200px;
+  }
+  .main h2,.main {
+    font-size:medium;
+  }
+}
+
